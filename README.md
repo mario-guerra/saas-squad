@@ -19,6 +19,7 @@ If you don't have a README yet, simply provide the `BOOTSTRAP_AGENT.md` and your
 To get the most out of the SaaS Squad, your project context (provided via `README.md` or the discovery interview) should ideally include:
 - **Product Vision**: What are you building and why?
 - **Core Tech Stack**: Frontend, Backend, DB, and Infrastructure.
+- **Target Cloud Provider**: GCP or Azure.
 - **Primary Persona**: Who is the main user of this system?
 - **Revenue Model**: How do you make money? (e.g., "Subscription," "One-Time," "Credit-based").
 - **Design Philosophy**: The "Vibe" (e.g., "Modern Industrial," "Liquid Glass," "Clean Minimalist").
