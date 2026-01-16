@@ -72,6 +72,12 @@ Below is the recommended multi-agent orchestration workflow:
 | **[MARKETING_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/MARKETING_AGENT.md)** | Expert Strategist for GTM, SEO, and branding. |
 | **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)** | Context handoff specialist for long-running sessions. |
 
+## 🤝 The Handoff Protocol
+The SaaS Squad is designed to be self-navigating. You don't need to memorize the workflow:
+- **Guided Directives**: Every agent ends their session with a `## Next Steps` section.
+- **Explicit Instructions**: They will tell you exactly which agent to call next and which files/context to carry over.
+- **Mission Roadmap**: The `BOOTSTRAP_AGENT` provides a primary "Flight Plan" tailored to your project upon initialization.
+
 ## 🛠 Advanced Features
 
 ### Locked Files Protection

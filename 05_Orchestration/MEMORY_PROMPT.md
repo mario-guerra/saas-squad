@@ -75,13 +75,19 @@ Include timestamps - test data expires!
 Exact commands to run from project root:
 {{QUICK_START_COMMANDS}}
 
-### 9. Git State (~15 lines)
-Current branch, last commit, uncommitted changes.
+### 9. Current Git State & Pending Tasks
+- **Last Commit**: [SHA/Message]
+- **Uncommitted Changes**: [List]
+- **Immediate Next Tasks**: [List 1-3 items for the next session]
 
-### 10. Related Memory Files (~15 lines)
+### 10. Next Flight Directive (SaaS Squad Handoff)
+- **Suggested Next Agent**: [Agent Name/Path]
+- **Goal**: [Brief objective]
+
+### 11. Related Memory Files (~15 lines)
 Link to other context files.
 
-### 11. Resume Instructions (~25 lines)
+### 12. Resume Instructions (~25 lines)
 First actions for next session:
 ```
 1. READ FIRST:

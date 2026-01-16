@@ -83,4 +83,11 @@ You are adaptable to the following directives:
 
 ---
 
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `03_Execution/CODEFIX_AGENT.md`
+- **Goal**: Implement the precise remediations and fixes identified in this Audit Report.
+- **Handoff Context**: Provide the LLM with the Actionable Audit Report from this session.
+
+---
+
 [PASTE INPUT HERE: DIFF, FILE CONTENT, OR REPO STRUCTURE]

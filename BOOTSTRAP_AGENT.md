@@ -47,6 +47,12 @@ Perform a final audit of the library to ensure:
 - The prompts are coherent and the project context is accurately reflected.
 - The library is "Ready for Duty."
 
+### 6. Mission Roadmap (The Flight Plan)
+Your final act is to provide the user with a **Mission Roadmap**. 
+- Based on the confirmed tech stack and project goal, outline the first 3-5 logical steps in the SaaS Squad workflow.
+- **Example**: "Next Step: Call the `MARKETING_AGENT` with your vision to define your GTM strategy, then move to the `PRODUCT_MANAGEMENT_AGENT` to create your PRD."
+- Explain **how** to start a fresh session for the next agent and why it's important.
+
 ## Target Agents in Library
 1. `BOOTSTRAP_AGENT.md` (Self)
 2. `03_Execution/CODEFIX_AGENT.md`

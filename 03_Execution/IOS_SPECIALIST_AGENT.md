@@ -49,3 +49,10 @@ Your mission is to implement iOS features with absolute fidelity to modern Swift
 ---
 
 [INSERT FEATURE SPEC OR BUG REPORT HERE]
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
+- **Goal**: Perform an adversarial audit of the implemented iOS code to identify HIG violations, security risks, and logical flaws.
+- **Handoff Context**: Provide the LLM with the SwiftUI Views and Logic Diffs from this session.

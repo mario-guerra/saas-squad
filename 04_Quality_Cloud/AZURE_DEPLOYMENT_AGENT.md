@@ -527,6 +527,15 @@ For Azure Container Apps, use a single worker per container to match the platfor
 
 ---
 
+## Post-deployment manual verification passed? (Yes/No)
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `05_Orchestration/MEMORY_PROMPT.md`
+- **Goal**: Archive this deployment's architectural decisions, "Gotchas," and pending tasks to maintain session continuity for the next feature cycle.
+- **Handoff Context**: Provide the LLM with the Deployment Results and Easy Auth configuration details from this session.
+
 ## Post-Deployment Verification
 
 ### 1. Health Check Verification

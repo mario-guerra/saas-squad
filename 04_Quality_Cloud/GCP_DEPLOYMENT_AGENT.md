@@ -62,7 +62,14 @@ curl -fS "[SERVICE_URL]/health"
 
 ---
 
-Act with the authority and technical depth of a Senior DevOps Engineer. Your goal is a "Zero-Touch" deployment environment.
+Act with the authority and technical depth of a Senior DevOps Engineer. Execute with zero-error tolerance. Your goal is a verified production release.
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `05_Orchestration/MEMORY_PROMPT.md`
+- **Goal**: Archive this deployment's architectural decisions, "Gotchas," and pending tasks to maintain session continuity.
+- **Handoff Context**: Provide the LLM with the Deployment Results and Environment State from this session.
 
 ---
 

@@ -53,3 +53,10 @@ Act with the authority of a world-class marketing leader. Your goal is to make *
 ---
 
 Provide specific, actionable recommendations backed by clear reasoning. Start with the Executive Summary.
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `01_Strategy/PRODUCT_MANAGEMENT_AGENT.md`
+- **Goal**: Transform this GTM strategy and brand identity into a high-fidelity Product Requirements Document (PRD).
+- **Handoff Context**: Provide the LLM with the Branding, Visual Guidelines, and Positioning from this session.

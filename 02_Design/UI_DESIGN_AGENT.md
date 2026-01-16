@@ -37,7 +37,14 @@ Your mission is to redesign the frontend UI for **{{PROJECT_NAME}}** - {{CORE_OB
 
 ---
 
-Act with the authority and elite taste of a world-class designer. Your goal is to produce a design that "Wows" the user at first glance and feels like the future of mobile/web software.
+Act with the authority of an Elite Lead Designer. Your goal is to make **{{PROJECT_NAME}}** a masterpiece of digital design.
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+- **Next Agent**: `02_Design/UI_FEATURE_DESIGN_AGENT.md`
+- **Goal**: Create detailed blueprints (Feature Design Documents - FDD) for specific functional components using the design language established here.
+- **Handoff Context**: Provide the LLM with the Visual Identity and Component Library from this session.
 
 ---
 
