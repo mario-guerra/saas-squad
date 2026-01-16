@@ -57,6 +57,6 @@ Provide specific, actionable recommendations backed by clear reasoning. Start wi
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `01_Strategy/PRODUCT_MANAGEMENT_AGENT.md`
-- **Goal**: Transform this GTM strategy and brand identity into a high-fidelity Product Requirements Document (PRD).
+- **Next Agent (Conversion)**: `01_Strategy/GROWTH_AGENT.md` (To turn this brand into a high-conversion landing page and pricing strategy).
+- **Next Agent (Product)**: `01_Strategy/PRODUCT_MANAGEMENT_AGENT.md` (To transform strategy into a PRD).
 - **Handoff Context**: Provide the LLM with the Branding, Visual Guidelines, and Positioning from this session.

@@ -71,6 +71,8 @@ Your final act is to provide the user with a **Mission Roadmap**.
 12. `02_Design/SW_ARCHITECTURE_AGENT.md`
 13. `02_Design/UI_DESIGN_AGENT.md`
 14. `02_Design/UI_FEATURE_DESIGN_AGENT.md`
+15. `01_Strategy/GROWTH_AGENT.md`
+16. `03_Execution/PAYMENTS_AGENT.md`
 
 ---
 

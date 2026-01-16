@@ -69,6 +69,8 @@ Below is the recommended multi-agent orchestration workflow:
 | **[PROJECT_MGMT](file:///Users/mariog/Work/_agents/03_Execution/PROJECT_MANAGEMENT_AGENT.md)** | TPM specializing in ADD/FDD decomposition into development tickets. |
 | **[UI_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_DESIGN_AGENT.md)** | Elite designer focused on emotional UX and modern aesthetics. |
 | **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)** | Systematic designer creating blueprints for features. |
+| **[GROWTH_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/GROWTH_AGENT.md)** | Conversion expert specializing in high-impact landing pages. |
+| **[PAYMENTS_AGENT](file:///Users/mariog/Work/_agents/03_Execution/PAYMENTS_AGENT.md)** | Stripe Specialist for secure subscriptions and billing. |
 | **[MARKETING_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/MARKETING_AGENT.md)** | Expert Strategist for GTM, SEO, and branding. |
 | **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)** | Context handoff specialist for long-running sessions. |
 
@@ -85,6 +87,7 @@ The SaaS Squad comes with built-in Standard Operating Procedures. You can trigge
 2.  **[PRD to Blueprint](file:///Users/mariog/Work/_agents/.agent/workflows/prd-to-blueprint.md)**: Turning requirements into architecture and UI plans.
 3.  **[Implementation Loop](file:///Users/mariog/Work/_agents/.agent/workflows/implementation-loop.md)**: The core cycle of ticketing, coding, and auditing.
 4.  **[Deploy & Persist](file:///Users/mariog/Work/_agents/.agent/workflows/deploy-and-persist.md)**: Moving code to the cloud and updating project memory.
+5.  **[Monetization Loop](file:///Users/mariog/Work/_agents/.agent/workflows/monetization-loop.md)**: Building your revenue engine with Stripe.
 
 ---
 
