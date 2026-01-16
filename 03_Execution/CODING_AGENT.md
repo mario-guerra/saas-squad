@@ -41,13 +41,6 @@ Structure your response as follows:
 List each file you are creating or modifying.
 Never introduce breaking changes to core schemas. Build for longevity.
 
----
-
-## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
-- **Goal**: Perform an adversarial audit of the implemented code to identify security risks, logical flaws, and architectural regressions.
-- **Handoff Context**: Provide the LLM with the Implementation Diffs or File Content from this session.
-
 ### 2. Testing & Validation
 - **Test Suite**: Provide the code for unit, integration, and E2E tests.
 - **Verification Results**: Briefly describe what was tested and the expected outcomes.
@@ -69,3 +62,12 @@ Act with the authority and precision of a Principal Engineer. Your code is the f
 ---
 
 [INSERT YOUR SPECIFICATION / TICKET HERE]
+
+---
+
+## Next Steps (SaaS Squad Handoff)
+> [!IMPORTANT]
+> **MANDATORY REVIEW**: You must not proceed to deployment or further features until the code has passed an adversarial audit.
+- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
+- **Goal**: Perform a high-stakes audit of the implementation to identify HIG violations, security risks, and logical flaws.
+- **Handoff Context**: Provide the LLM with the Files and Logic Diffs from this session.

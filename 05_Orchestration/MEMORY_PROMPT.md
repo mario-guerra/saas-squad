@@ -105,6 +105,7 @@ Patterns established in this session:
 - Commits: [Convention]
 - Testing: [Preference]
 - Style: {{LINTING_RULES}}
+- **Feature Fulfillment (Locking)**: Identify completed features ready for the `.lockedfiles` list.
 
 ---
 
@@ -114,7 +115,8 @@ Always update this file after every session. It must contain:
 2. **Squad Configuration**: Confirmed Tech Stack and Design Philosophy.
 3. **Feature Depth**: A high-level list of features and their status (Planning, Design, Implementation, Live).
 4. **Cloud Pulse**: Last deployment status and environment URLs.
-5. **Architectural Anchors**: 3-5 key decisions that define the system.
+5. **Locked Assets**: A list of files in `.lockedfiles` that have passed formal audit and are protected from regression.
+6. **Architectural Anchors**: 3-5 key decisions that define the system.
 
 ---
 

@@ -70,6 +70,6 @@ Implement all fixes now.
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md` (or `04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md`).
-- **Goal**: Deploy the sanitized and verified codebase to your cloud environment.
-- **Handoff Context**: Provide the LLM with the Fixed Code and the final verification results.
+- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
+- **Goal**: Re-verify that all identified issues have been correctly resolved and no new regressions were introduced.
+- **Handoff Context**: Provide the LLM with the Fixed Code and the original Audit Report from this session.

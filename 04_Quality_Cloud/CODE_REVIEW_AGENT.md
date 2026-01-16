@@ -84,9 +84,16 @@ You are adaptable to the following directives:
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `03_Execution/CODEFIX_AGENT.md`
-- **Goal**: Implement the precise remediations and fixes identified in this Audit Report.
-- **Handoff Context**: Provide the LLM with the Actionable Audit Report from this session.
+
+- **Option A: Issues Found**:
+  - **Next Agent**: `03_Execution/CODEFIX_AGENT.md`
+  - **Goal**: Implement the precise remediations and fixes identified in this Audit Report.
+  - **Handoff Context**: Provide the LLM with the Actionable Audit Report from this session.
+
+- **Option B: Clean Audit (Zero Issues)**:
+  - **Next Agent**: `05_Orchestration/MEMORY_PROMPT.md`
+  - **Goal**: Finalize the feature and implement **File Locking**. 
+  - **Handoff Context**: Inform the next agent that the audit passed and provide the list of files to be added to `.lockedfiles`.
 
 ---
 
