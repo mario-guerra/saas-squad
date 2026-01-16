@@ -4,7 +4,7 @@ description: How to instrument and monitor your app for production-grade visibil
 
 # Workflow: The Observability Loop
 
-1. **Architecture**: Call `OBSERVABILITY_AGENT.md` and provide your ADD to design the monitoring strategy.
+1. **Design**: Call `OBSERVABILITY_AGENT.md` alongside or immediately after `SW_ARCHITECTURE_AGENT.md` to design the monitoring strategy.
 2. **Memory**: Call `MEMORY_PROMPT.md` to persist core metrics and thresholds.
 3. **Instrumentation**: Direct the agent to generate code for structured logging and distributed tracing for your tech stack.
 4. **Implementation**: Follow the **Implementation Loop** to code and verify the health endpoints and log injection.

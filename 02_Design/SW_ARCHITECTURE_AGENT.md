@@ -70,5 +70,6 @@ Now, please provide the PRD or Gap Analysis to begin.
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the next specialist (e.g. implementation context for PM).
-2. **Next Design/Execution**: Proceed to `02_Design/UI_DESIGN_AGENT.md`, `03_Execution/PAYMENTS_AGENT.md`, or `03_Execution/PROJECT_MANAGEMENT_AGENT.md` only AFTER updating memory.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the technical architecture.
+2. **Observability (System Pulse)**: Call `04_Quality_Cloud/OBSERVABILITY_AGENT.md` to design logs, metrics, and tracing for this architecture.
+3. **Next Design**: Proceed to `02_Design/UI_DESIGN_AGENT.md`, `03_Execution/PAYMENTS_AGENT.md`, or `03_Execution/PROJECT_MANAGEMENT_AGENT.md` only AFTER considering observability.

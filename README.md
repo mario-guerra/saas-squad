@@ -47,11 +47,13 @@ graph TD
     MKT --> MEM1[MEMORY PROMPT]
     MEM1 --> PM[Product Management]
     
-    %% Phase 2: Design
+    %% Phase 2: Design & Architecture
     PM --> MEM2[MEMORY PROMPT]
     MEM2 --> ARCH[SW Architecture]
     ARCH --> MEM3[MEMORY PROMPT]
-    MEM3 --> UI[UI Design]
+    MEM3 --> OBS[Observability Agent]
+    OBS --> MEM_OBS[MEMORY PROMPT]
+    MEM_OBS --> UI[UI Design]
     UI --> MEM4[MEMORY PROMPT]
     MEM4 --> FEAT[UI Feature Design]
     
@@ -69,13 +71,12 @@ graph TD
     FIX --> MEM9[MEMORY PROMPT]
     MEM9 --> REVIEW
     
-    %% Phase 5: Verification & Deploy
+    %% Phase 5: Deployment
     REVIEW --> |Clean Audit| MEM10[MEMORY PROMPT]
     MEM10 --> TEST[Testing Agent]
     TEST --> MEM11[MEMORY PROMPT]
     MEM11 --> DEPLOY[Deployment Agent]
-    DEPLOY --> OBS[Observability Agent]
-    OBS --> MEM_FINAL[MEMORY PROMPT]
+    DEPLOY --> MEM_FINAL[MEMORY PROMPT]
     MEM_FINAL --> END((Production Ready))
 
     %% Debug Loop
@@ -95,6 +96,7 @@ graph TD
     style MEM9 fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
     style MEM10 fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
     style MEM11 fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
+    style MEM_OBS fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
     style MEM_FINAL fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
     style MEM_DEBUG fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
     style REVIEW fill:#f96,stroke:#333,stroke-width:4px
@@ -107,22 +109,22 @@ Below is the recommended multi-agent orchestration workflow:
 2. **[PRODUCT_MGMT](file:///Users/mariog/Work/_agents/01_Strategy/PRODUCT_MANAGEMENT_AGENT.md)**: Transform the vision and user journeys into a high-fidelity PRD.
 
 ### Phase 2: Design & Architecture
-3. **[SW_ARCHITECTURE](file:///Users/mariog/Work/_agents/02_Design/SW_ARCHITECTURE_AGENT.md)**: Take the PRD and design the system blueprint (ADD), mapping out technical trade-offs.
-4. **[UI_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_DESIGN_AGENT.md)**: Establish the visual identity and primary **{{DESIGN_PHILOSOPHY}}** layout.
-5. **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)**: Create detailed blueprints (FDD) for specific functional components.
+3. **[SW_ARCHITECTURE](file:///Users/mariog/Work/_agents/02_Design/SW_ARCHITECTURE_AGENT.md)**: Take the PRD and design the system blueprint (ADD).
+4. **[OBSERVABILITY](file:///Users/mariog/Work/_agents/04_Quality_Cloud/OBSERVABILITY_AGENT.md)**: Instrument the app for production-grade visibility (early design).
+5. **[UI_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_DESIGN_AGENT.md)**: Establish the visual identity and primary **{{DESIGN_PHILOSOPHY}}** layout.
+6. **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)**: Create detailed blueprints (FDD) for specific functional components.
 
 ### Phase 3: Planning & Execution
 6. **[PROJECT_MGMT](file:///Users/mariog/Work/_agents/03_Execution/PROJECT_MANAGEMENT_AGENT.md)**: Decompose the ADD/FDD into actionable, atomic development tickets.
 7. **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)**: (or [IOS_SPECIALIST](file:///Users/mariog/Work/_agents/03_Execution/IOS_SPECIALIST_AGENT.md)) Implement the tickets using defensive TDD and project constants.
 
 ### Phase 4: Quality & Verification
-8. **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)**: Conduct adversarial audits of the code.
-9. **[TESTING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/TESTING_AGENT.md)**: Architect and execute E2E and integration test suites.
-10. **[DEBUGGING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/DEBUGGING_AGENT.md)**: Perform forensic audit and RCA for complex bugs.
+9. **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)**: Conduct adversarial audits of the code.
+10. **[TESTING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/TESTING_AGENT.md)**: Architect and execute E2E and integration test suites.
+11. **[DEBUGGING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/DEBUGGING_AGENT.md)**: Perform forensic audit and RCA for complex bugs.
 
-### Phase 5: Deployment & Observability
-11. **Cloud Deployment**: Use [GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md) or [AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md) to deploy.
-12. **[OBSERVABILITY_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/OBSERVABILITY_AGENT.md)**: Instrument the app for production-grade visibility.
+### Phase 5: Deployment & Persistence
+12. **Cloud Deployment**: Use [GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md) or [AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md) to deploy.
 13. **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)**: Capture project "Gotchas" and hand off context.
 
 ## 📂 Agent Directory
