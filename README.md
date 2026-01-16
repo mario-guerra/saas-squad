@@ -73,6 +73,9 @@ Below is the recommended multi-agent orchestration workflow:
 | **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)** | Systematic designer creating blueprints for features. |
 | **[GROWTH_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/GROWTH_AGENT.md)** | Conversion expert specializing in high-impact landing pages. |
 | **[PAYMENTS_AGENT](file:///Users/mariog/Work/_agents/03_Execution/PAYMENTS_AGENT.md)** | Stripe Specialist for secure subscriptions and billing. |
+| **[COMPLIANCE_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/COMPLIANCE_AGENT.md)** | Senior Legal & Data Privacy counsel for SaaS safety. |
+| **[OPERATIONS_AGENT](file:///Users/mariog/Work/_agents/02_Design/OPERATIONS_AGENT.md)** | Senior COO for internal tools, dashboards, and support. |
+| **[ANALYTICS_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/ANALYTICS_AGENT.md)** | VP of Growth for event tracking and funnel analysis. |
 | **[MARKETING_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/MARKETING_AGENT.md)** | Expert Strategist for GTM, SEO, and branding. |
 | **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)** | Context handoff specialist for long-running sessions. |
 
@@ -90,6 +93,8 @@ The SaaS Squad comes with built-in Standard Operating Procedures. You can trigge
 3.  **[Implementation Loop](file:///Users/mariog/Work/_agents/.agent/workflows/implementation-loop.md)**: The core cycle of ticketing, coding, and auditing.
 4.  **[Deploy & Persist](file:///Users/mariog/Work/_agents/.agent/workflows/deploy-and-persist.md)**: Moving code to the cloud and updating project memory.
 5.  **[Monetization Loop](file:///Users/mariog/Work/_agents/.agent/workflows/monetization-loop.md)**: Building your revenue engine with Stripe.
+6.  **[Compliance Loop](file:///Users/mariog/Work/_agents/.agent/workflows/compliance-loop.md)**: Getting your legal docs and data privacy ready.
+7.  **[Growth Loop](file:///Users/mariog/Work/_agents/.agent/workflows/growth-loop.md)**: Setting up tracking and iterating on user behavior.
 
 ---
 
