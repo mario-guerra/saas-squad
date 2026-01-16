@@ -40,7 +40,7 @@ Perform a final audit of the library to ensure:
 - The library is "Ready for Duty."
 
 ## Target Agents in Library
-1. `05_Orchestration/BOOTSTRAP_AGENT.md` (Self)
+1. `BOOTSTRAP_AGENT.md` (Self)
 2. `03_Execution/CODEFIX_AGENT.md`
 3. `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
 4. `03_Execution/CODING_AGENT.md`

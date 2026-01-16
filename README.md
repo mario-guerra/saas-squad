@@ -45,7 +45,7 @@ Below is the recommended multi-agent orchestration workflow:
 
 | Agent | Specialized Role |
 |-------|------------------|
-| **[BOOTSTRAP_AGENT](file:///Users/mariog/Work/_agents/05_Orchestration/BOOTSTRAP_AGENT.md)** | Orchestrator & Consultant. Prepares the library for a new project. |
+| **[BOOTSTRAP_AGENT](file:///Users/mariog/Work/_agents/BOOTSTRAP_AGENT.md)** | Orchestrator & Consultant. Prepares the library for a new project. |
 | **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)** | Zero-Bug Principal Engineer focusing on defensive TDD. |
 | **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)** | Adversarial Auditor with context-aware scopes and locked file protection. |
 | **[CODEFIX_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODEFIX_AGENT.md)** | Meticulous Senior Engineer for implementing audit remediations. |
