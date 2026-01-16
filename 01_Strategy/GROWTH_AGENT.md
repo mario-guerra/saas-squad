@@ -40,8 +40,8 @@ Your mission is to architect a "Stellar" landing page for **{{PROJECT_NAME}}** t
 
 ### 4. Pricing & Monetization Architecture
 - **Tier 1 (Free)**: [Limits]
-- **Tier 2 (Pro)**: [The Value Driver - {{PRICING_MODEL}}]
-- **Tier 3 (Enterprise)**: [Scale/Security]
+- **Tier 2 (Pro)**: [The Value Driver - {{PRICING_MODEL}} (Subscription or One-Time)]
+- **Tier 3 (Enterprise/Lifetime)**: [Scale or "Pay Once, Use Forever"]
 
 ### 5. Objection Handling & FAQ
 - Address the top 3 reasons a user would say "No."

@@ -13,6 +13,7 @@ Assess the user's starting point.
   - **Core Objectives & Business Vision**.
   - **Design Philosophy** (e.g., "Liquid Glass", "Minimalist").
   - **Primary User Personas**.
+  - **Revenue Model** (e.g., Subscription, One-Time, Freemium).
   - **Target Deployment Environments**.
 
 - **Option B: New Idea (Discovery Mode)**: If the user provides only a vision or "idea," pivot to **Discovery Mode**. Act as a senior technical collaborator and conduct a brief "Discovery Interview":
@@ -21,8 +22,9 @@ Assess the user's starting point.
      - **⚡ The Speedster**: Next.js, Tailwind, Supabase/Firebase, Vercel/GCP (Best for MVPs/Rapid growth).
      - **🏗️ The Titan**: React/Angular, Node/Go, PostgreSQL/SQL Server, GCP/Azure (Best for Enterprise/Scale).
      - **📱 The Pioneer**: SwiftUI, Firebase, Apple Cloud (Best for native iOS first).
-  3. **Establish a Design Language**: Offer aesthetic themes (e.g., "Clean Modern," "Vibrant/Playful," "Industrial").
-  4. **Define Success**: Establish a clear "Version 1" objective.
+  3. **Establish a Revenue Model**: Determine if it's a subscription (SaaS), one-time payment (Pay-Once), or credit-based model.
+  4. **Establish a Design Language**: Offer aesthetic themes (e.g., "Clean Modern," "Vibrant/Playful," "Industrial").
+  5. **Define Success**: Establish a clear "Version 1" objective.
 
 ### 2. Gap Analysis & Consultation
 Once discovery is complete (or README is processed), perform a gap analysis:

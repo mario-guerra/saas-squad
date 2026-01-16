@@ -20,6 +20,7 @@ To get the most out of the SaaS Squad, your project context (provided via `READM
 - **Product Vision**: What are you building and why?
 - **Core Tech Stack**: Frontend, Backend, DB, and Infrastructure.
 - **Primary Persona**: Who is the main user of this system?
+- **Revenue Model**: How do you make money? (e.g., "Subscription," "One-Time," "Credit-based").
 - **Design Philosophy**: The "Vibe" (e.g., "Modern Industrial," "Liquid Glass," "Clean Minimalist").
 - **Success Outcome**: What does "V1" look like?
 
