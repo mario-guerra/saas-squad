@@ -50,15 +50,23 @@ Below is the recommended multi-agent orchestration workflow:
 6. **[PROJECT_MGMT](file:///Users/mariog/Work/_agents/03_Execution/PROJECT_MANAGEMENT_AGENT.md)**: Decompose the ADD/FDD into actionable, atomic development tickets.
 7. **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)**: (or [IOS_SPECIALIST](file:///Users/mariog/Work/_agents/03_Execution/IOS_SPECIALIST_AGENT.md)) Implement the tickets using defensive TDD and project constants.
 
-### Phase 4: Quality & Deployment
-8. **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)**: Conduct adversarial audits of the code (Incremental Diffs or Full Repo).
-9. **Cloud Deployment**: Use [GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md) (Terraform) or [AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md) (Bicep/azd) to deploy.
-10. **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)**: Capture all project "Gotchas" and hand off context for the next feature cycle.
+### Phase 4: Quality & Verification
+8. **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)**: Conduct adversarial audits of the code.
+9. **[TESTING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/TESTING_AGENT.md)**: Architect and execute E2E and integration test suites.
+10. **[DEBUGGING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/DEBUGGING_AGENT.md)**: Perform forensic audit and RCA for complex bugs.
+
+### Phase 5: Deployment & Observability
+11. **Cloud Deployment**: Use [GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md) or [AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md) to deploy.
+12. **[OBSERVABILITY_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/OBSERVABILITY_AGENT.md)**: Instrument the app for production-grade visibility.
+13. **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)**: Capture project "Gotchas" and hand off context.
 
 ## 📂 Agent Directory
 
 | Agent | Specialized Role |
 |-------|------------------|
+| **[OBSERVABILITY](file:///Users/mariog/Work/_agents/04_Quality_Cloud/OBSERVABILITY_AGENT.md)** | SRE specializing in monitoring, tracing, and logs. |
+| **[DEBUGGING](file:///Users/mariog/Work/_agents/03_Execution/DEBUGGING_AGENT.md)** | Forensic auditor for log analysis and RCA. |
+| **[TESTING](file:///Users/mariog/Work/_agents/03_Execution/TESTING_AGENT.md)** | QA Lead for E2E, Integration, and Load testing. |
 | **[BOOTSTRAP_AGENT](file:///Users/mariog/Work/_agents/BOOTSTRAP_AGENT.md)** | Orchestrator & Consultant. Prepares the library for a new project. |
 | **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)** | Zero-Bug Principal Engineer focusing on defensive TDD. |
 | **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)** | Adversarial Auditor with context-aware scopes and locked file protection. |
@@ -90,6 +98,8 @@ The SaaS Squad comes with built-in Standard Operating Procedures. You can trigge
 3.  **[Implementation Loop](file:///Users/mariog/Work/_agents/.agent/workflows/implementation-loop.md)**: The core cycle of ticketing, coding, and auditing.
 4.  **[Deploy & Persist](file:///Users/mariog/Work/_agents/.agent/workflows/deploy-and-persist.md)**: Moving code to the cloud and updating project memory.
 5.  **[Monetization Loop](file:///Users/mariog/Work/_agents/.agent/workflows/monetization-loop.md)**: Building your revenue engine with Stripe.
+6.  **[Observability Loop](file:///Users/mariog/Work/_agents/.agent/workflows/observability-loop.md)**: How to instrument and monitor your app.
+7.  **[Debug-Fix Loop](file:///Users/mariog/Work/_agents/.agent/workflows/debug-fix-loop.md)**: Structured sequence for fixing production bugs.
 
 ---
 
