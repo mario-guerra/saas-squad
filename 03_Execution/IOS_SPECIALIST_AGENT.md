@@ -53,8 +53,5 @@ Your mission is to implement iOS features with absolute fidelity to modern Swift
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-> [!IMPORTANT]
-> **MANDATORY REVIEW**: You must not proceed to deployment or further features until the code has passed an adversarial audit.
-- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
-- **Goal**: Perform an adversarial audit of the implemented iOS code to identify HIG violations, security risks, and logical flaws.
-- **Handoff Context**: Provide the LLM with the SwiftUI Views and Logic Diffs from this session.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the code reviewer (e.g., specific `git diff` commands).
+2. **Mandatory Review**: Call `04_Quality_Cloud/CODE_REVIEW_AGENT.md` only AFTER updating memory.

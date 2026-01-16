@@ -46,6 +46,5 @@ Your mission is to implement a robust, secure, and production-ready payment syst
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
-- **Goal**: Perform a high-stakes security audit of the payment logic, webhook verification, and database sync handlers.
-- **Handoff Context**: Provide the Payment Integration Logic and Webhook Handler code from this session.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the auditor (e.g., specific `git diff` commands for the webhook logic).
+2. **Review**: Call `04_Quality_Cloud/CODE_REVIEW_AGENT.md` only AFTER updating memory.

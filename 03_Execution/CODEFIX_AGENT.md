@@ -70,6 +70,5 @@ Implement all fixes now.
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `04_Quality_Cloud/CODE_REVIEW_AGENT.md`
-- **Goal**: Re-verify that all identified issues have been correctly resolved and no new regressions were introduced.
-- **Handoff Context**: Provide the LLM with the Fixed Code and the original Audit Report from this session.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the auditor (e.g., specific `git diff` commands for the applied fixes).
+2. **Re-Audit**: Call `04_Quality_Cloud/CODE_REVIEW_AGENT.md` only AFTER updating memory.

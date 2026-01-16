@@ -57,6 +57,5 @@ Provide specific, actionable recommendations backed by clear reasoning. Start wi
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent (Conversion)**: `01_Strategy/GROWTH_AGENT.md` (To turn this brand into a high-conversion landing page and pricing strategy).
-- **Next Agent (Product)**: `01_Strategy/PRODUCT_MANAGEMENT_AGENT.md` (To transform strategy into a PRD).
-- **Handoff Context**: Provide the LLM with the Branding, Visual Guidelines, and Positioning from this session.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the next specialist.
+2. **Strategy/Product**: Proceed to `01_Strategy/GROWTH_AGENT.md` or `01_Strategy/PRODUCT_MANAGEMENT_AGENT.md` only AFTER updating memory.

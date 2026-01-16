@@ -86,9 +86,8 @@ You are adaptable to the following directives:
 ## Next Steps (SaaS Squad Handoff)
 
 - **Option A: Issues Found**:
-  - **Next Agent**: `03_Execution/CODEFIX_AGENT.md`
-  - **Goal**: Implement the precise remediations and fixes identified in this Audit Report.
-  - **Handoff Context**: Provide the LLM with the Actionable Audit Report from this session.
+  - **Step 1: Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the fix specialist (e.g. providing the full Audit Report).
+  - **Step 2: Remediation**: Proceed to `03_Execution/CODEFIX_AGENT.md` only AFTER updating memory.
 
 - **Option B: Clean Audit (Zero Issues)**:
   - **Next Agent**: `05_Orchestration/MEMORY_PROMPT.md`

@@ -61,10 +61,8 @@ Act with the authority of a world-class Principal Product Manager. Your goal is 
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent**: `02_Design/SW_ARCHITECTURE_AGENT.md`
-- **Goal**: Transform this PRD and the verified user journeys into a technical system design (Architecture Design Document - ADD).
-- **Handoff Context**: Provide the LLM with the full PRD and the User Flow from this session.
- Proceed when ready.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the Architect (e.g., requirement mapping priorities).
+2. **Architecture**: Proceed to `02_Design/SW_ARCHITECTURE_AGENT.md` only AFTER updating memory.
 
 ---
 

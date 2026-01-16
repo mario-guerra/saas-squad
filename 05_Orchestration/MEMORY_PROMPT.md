@@ -85,6 +85,10 @@ Exact commands to run from project root:
 ### 10. Next Flight Directive (SaaS Squad Handoff)
 - **Suggested Next Agent**: [Agent Name/Path]
 - **Goal**: [Brief objective]
+- **Handoff Orchestration**: 
+  - Provide technical commands for the user to generate the necessary context for the next agent.
+  - **Example (Coding -> Review)**: `git diff HEAD~1 > session_diff.txt` (Attach this to the Reviewer).
+  - **Example (Audit -> Fix)**: `[Actionable Audit Report]` (Provide the full report).
 
 ### 11. Related Memory Files (~15 lines)
 Link to other context files.

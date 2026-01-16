@@ -49,6 +49,5 @@ Your mission is to architect a "Stellar" landing page for **{{PROJECT_NAME}}** t
 ---
 
 ## Next Steps (SaaS Squad Handoff)
-- **Next Agent (Visuals)**: `02_Design/UI_DESIGN_AGENT.md` (To turn this blueprint into a high-fidelity visual design).
-- **Next Agent (Code)**: `03_Execution/CODING_AGENT.md` (If you are ready to implement the HTML/CSS/React).
-- **Handoff Context**: Provide the Landing Page Blueprint and Pricing Tiers from this session.
+1. **Update Memory**: Call `05_Orchestration/MEMORY_PROMPT.md` to persist the session state and generate the instructions for the next specialist (e.g. design assets vs implementation priorities).
+2. **Design/Execution**: Proceed to `02_Design/UI_DESIGN_AGENT.md` or `03_Execution/CODING_AGENT.md` only AFTER updating memory.
