@@ -84,19 +84,19 @@ graph TD
     MEM_DEBUG --> FIX
     
     %% Styling
-    style MEM1 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM2 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM3 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM4 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM5 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM6 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM7 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM8 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM9 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM10 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM11 fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM_FINAL fill:#f9f,stroke:#333,stroke-width:2px
-    style MEM_DEBUG fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM1 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM2 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM3 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM4 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM5 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM6 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM7 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM8 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM9 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM10 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM11 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM_FINAL fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MEM_DEBUG fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style REVIEW fill:#f96,stroke:#333,stroke-width:4px
 ```
 
