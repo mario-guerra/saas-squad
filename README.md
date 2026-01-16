@@ -1,0 +1,95 @@
+# 🚀 The SaaS Squad
+
+This repository contains a high-fidelity, automated library of specialized AI agent prompts (The "SaaS Squad") designed for modern software development, architecture, and marketing. 
+
+## 🌟 The Vision
+The core philosophy of the SaaS Squad is **"Template-Driven Autonomy."** Instead of static prompts, these are dynamic templates that can be "bootstrapped" for any project by extracting context from a `README.md`. 
+
+## 🚀 Getting Started (The Bootstrap Workflow)
+
+The library features a **Bootstrap Agent** that automates the setup for a new project.
+
+1. **Import the Library**: Copy the `.md` files into your project's `/agents` or `/.prompts` directory.
+2. **Orchestrate**: Provide the `BOOTSTRAP_AGENT.md` and your project's `README.md` to an LLM.
+3. **Customize**: The Bootstrap Agent will:
+   - Extract project name, tech stack, and personas.
+   - Audit for missing details and offer insightful suggestions.
+   - Replace all `{{PLACEHOLDER}}` tags across the library.
+   - Prepend a standardized **Project Parameters** block to every prompt.
+
+## 🏗 building a SaaS from Scratch (Orchestration Workflow)
+
+This library is designed for the end-to-end lifecycle of a SaaS product. **CRITICAL WORKFLOW**: To maintain the highest fidelity and prevent "persona contamination," you should **start a fresh chat session** whenever you switch between agents. Use the `MEMORY_PROMPT` to generate a state handoff before switching.
+
+Below is the recommended multi-agent orchestration workflow:
+
+### Phase 1: Strategy & Definition
+1. **[MARKETING_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/MARKETING_AGENT.md)**: Define the market positioning, buyer personas, and GTM strategy.
+2. **[PRODUCT_MGMT](file:///Users/mariog/Work/_agents/01_Strategy/PRODUCT_MANAGEMENT_AGENT.md)**: Transform the vision and user journeys into a high-fidelity PRD.
+
+### Phase 2: Design & Architecture
+3. **[SW_ARCHITECTURE](file:///Users/mariog/Work/_agents/02_Design/SW_ARCHITECTURE_AGENT.md)**: Take the PRD and design the system blueprint (ADD), mapping out technical trade-offs.
+4. **[UI_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_DESIGN_AGENT.md)**: Establish the visual identity and primary **{{DESIGN_PHILOSOPHY}}** layout.
+5. **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)**: Create detailed blueprints (FDD) for specific functional components.
+
+### Phase 3: Planning & Execution
+6. **[PROJECT_MGMT](file:///Users/mariog/Work/_agents/03_Execution/PROJECT_MANAGEMENT_AGENT.md)**: Decompose the ADD/FDD into actionable, atomic development tickets.
+7. **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)**: (or [IOS_SPECIALIST](file:///Users/mariog/Work/_agents/03_Execution/IOS_SPECIALIST_AGENT.md)) Implement the tickets using defensive TDD and project constants.
+
+### Phase 4: Quality & Deployment
+8. **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)**: Conduct adversarial audits of the code (Incremental Diffs or Full Repo).
+9. **Cloud Deployment**: Use [GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md) (Terraform) or [AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md) (Bicep/azd) to deploy.
+10. **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)**: Capture all project "Gotchas" and hand off context for the next feature cycle.
+
+## 📂 Agent Directory
+
+| Agent | Specialized Role |
+|-------|------------------|
+| **[BOOTSTRAP_AGENT](file:///Users/mariog/Work/_agents/05_Orchestration/BOOTSTRAP_AGENT.md)** | Orchestrator & Consultant. Prepares the library for a new project. |
+| **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)** | Zero-Bug Principal Engineer focusing on defensive TDD. |
+| **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)** | Adversarial Auditor with context-aware scopes and locked file protection. |
+| **[CODEFIX_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODEFIX_AGENT.md)** | Meticulous Senior Engineer for implementing audit remediations. |
+| **[SW_ARCHITECTURE](file:///Users/mariog/Work/_agents/02_Design/SW_ARCHITECTURE_AGENT.md)** | Principal Architect focusing on trade-offs and AI-first infra. |
+| **[IOS_SPECIALIST](file:///Users/mariog/Work/_agents/03_Execution/IOS_SPECIALIST_AGENT.md)** | Senior SwiftUI engineer following strict Apple HIG patterns. |
+| **[GCP_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/GCP_DEPLOYMENT_AGENT.md)** | DevOps Specialist providing Terraform-first runbooks. |
+| **[AZURE_DEPLOYMENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/AZURE_DEPLOYMENT_AGENT.md)** | Azure Specialist using Bicep and `azd` for cloud-native deployments. |
+| **[PRODUCT_MGMT](file:///Users/mariog/Work/_agents/01_Strategy/PRODUCT_MANAGEMENT_AGENT.md)** | Principal PM translating ambiguity into high-fidelity PRDs. |
+| **[PROJECT_MGMT](file:///Users/mariog/Work/_agents/03_Execution/PROJECT_MANAGEMENT_AGENT.md)** | TPM specializing in ADD/FDD decomposition into development tickets. |
+| **[UI_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_DESIGN_AGENT.md)** | Elite designer focused on emotional UX and modern aesthetics. |
+| **[UI_FEATURE_DESIGN](file:///Users/mariog/Work/_agents/02_Design/UI_FEATURE_DESIGN_AGENT.md)** | Systematic designer creating blueprints for features. |
+| **[MARKETING_AGENT](file:///Users/mariog/Work/_agents/01_Strategy/MARKETING_AGENT.md)** | Expert Strategist for GTM, SEO, and branding. |
+| **[MEMORY_PROMPT](file:///Users/mariog/Work/_agents/05_Orchestration/MEMORY_PROMPT.md)** | Context handoff specialist for long-running sessions. |
+
+## 🛠 Advanced Features
+
+### Locked Files Protection
+The `CODE_REVIEW_AGENT` monitors a `.lockedfiles/` directory. Any modifications to these files are flagged as a **CRITICAL SECURITY WARNING**, ensuring architectural integrity.
+
+### Adaptable Review Scopes
+Unlike generic reviews, the `CODE_REVIEW_AGENT` supports three distinct modes:
+- `SCOPE: DIFF`: Pre-commit incremental review.
+- `SCOPE: FILE(S)`: Targeted deep-dives.
+- `SCOPE: REPO`: Holistic architectural audits.
+
+## 🔄 Session Continuity & State Persistence
+
+For long-running projects or when switching between specialized agents (e.g., from PM to Architect), maintaining context is critical. This library provides a specialized **`MEMORY_PROMPT.md`** to handle state handoffs across session boundaries.
+
+### Why Fresh Sessions?
+Mixing specialized agents in a single long chat session can lead to "persona drift" and logic regressions as the LLM's context window fills with conflicting instructions. Starting a fresh session for each major task ensures the agent stays 100% focused on its specific role and rules.
+
+### The Memory Workflow
+1. **End-of-Session Handoff**: At the end of a session, use the `MEMORY_PROMPT.md` to generate a `SESSION_MEMORY.md` file (typically in `.tmp/` or a specialized project directory).
+2. **Context Compression**: The prompt directs the agent to summarize:
+   - Architectural decisions.
+   - Critical "Gotchas" and non-obvious discoveries.
+   - Current Git state and pending tasks.
+3. **Resuming Work**: When starting a new session, provide the `SESSION_MEMORY.md` to the agent first. This ensures the agent "remembers" where it left off, avoiding repetitive research and preventing logic regressions.
+
+## 📜 Best Practices
+- **Explicit README**: The better your project README, the more precise the Bootstrap Agent will be.
+- **Maintain consistency**: Use the `MEMORY_PROMPT` to pass context between long interactions.
+- **Review before merge**: Always run the `CODE_REVIEW_AGENT` on significant diffs.
+
+---
+*Built with ❤️ for advanced agentic coding workflows.*
