@@ -10,9 +10,21 @@ The core philosophy of the SaaS Squad is **"Template-Driven Autonomy."** Instead
 The library features a **Bootstrap Agent** that automates the setup for a new project.
 
 1. **Import the Library**: Copy the `.md` files into your project's `/agents` or `/.prompts` directory.
-2. **Orchestrate**: Provide the `BOOTSTRAP_AGENT.md` and your project's `README.md` to an LLM.
+2. **Orchestrate**: Provide the `BOOTSTRAP_AGENT.md` (and your project's `README.md` if it exists) to an LLM.
+
+### Starting from Scratch (Zero to One)
+If you don't have a README yet, simply provide the `BOOTSTRAP_AGENT.md` and your product idea. The agent will move into **Discovery Mode**, acting as a senior technical consultant to help you define your tech stack, design philosophy, and core objectives through a brief interview.
+
+### Ideal Project Context
+To get the most out of the SaaS Squad, your project context (provided via `README.md` or the discovery interview) should ideally include:
+- **Product Vision**: What are you building and why?
+- **Core Tech Stack**: Frontend, Backend, DB, and Infrastructure.
+- **Primary Persona**: Who is the main user of this system?
+- **Design Philosophy**: The "Vibe" (e.g., "Modern Industrial," "Liquid Glass," "Clean Minimalist").
+- **Success Outcome**: What does "V1" look like?
+
 3. **Customize**: The Bootstrap Agent will:
-   - Extract project name, tech stack, and personas.
+   - Extract/Discover project name, tech stack, and personas.
    - Audit for missing details and offer insightful suggestions.
    - Replace all `{{PLACEHOLDER}}` tags across the library.
    - Prepend a standardized **Project Parameters** block to every prompt.
