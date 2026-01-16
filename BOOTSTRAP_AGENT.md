@@ -17,7 +17,10 @@ Assess the user's starting point.
 
 - **Option B: New Idea (Discovery Mode)**: If the user provides only a vision or "idea," pivot to **Discovery Mode**. Act as a senior technical collaborator and conduct a brief "Discovery Interview":
   1. **Identify the Core Value Prop**: Ask what problem the product solves.
-  2. **Refine the Tech Stack**: Suggest a stack based on their vision (e.g., "For a cross-platform SaaS, I recommend Next.js + Tailwind + Supabase").
+  2. **Refine the Tech Stack**: Suggest a stack based on their vision. If the user is unsure, offer **Squad Presets**:
+     - **⚡ The Speedster**: Next.js, Tailwind, Supabase/Firebase, Vercel/GCP (Best for MVPs/Rapid growth).
+     - **🏗️ The Titan**: React/Angular, Node/Go, PostgreSQL/SQL Server, GCP/Azure (Best for Enterprise/Scale).
+     - **📱 The Pioneer**: SwiftUI, Firebase, Apple Cloud (Best for native iOS first).
   3. **Establish a Design Language**: Offer aesthetic themes (e.g., "Clean Modern," "Vibrant/Playful," "Industrial").
   4. **Define Success**: Establish a clear "Version 1" objective.
 

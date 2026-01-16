@@ -78,6 +78,16 @@ The SaaS Squad is designed to be self-navigating. You don't need to memorize the
 - **Explicit Instructions**: They will tell you exactly which agent to call next and which files/context to carry over.
 - **Mission Roadmap**: The `BOOTSTRAP_AGENT` provides a primary "Flight Plan" tailored to your project upon initialization.
 
+## 🚀 Standard Workflows (SOPs)
+The SaaS Squad comes with built-in Standard Operating Procedures. You can trigger these workflows directly:
+
+1.  **[Idea to PRD](file:///Users/mariog/Work/_agents/.agent/workflows/idea-to-prd.md)**: Zero-to-one strategy and requirements.
+2.  **[PRD to Blueprint](file:///Users/mariog/Work/_agents/.agent/workflows/prd-to-blueprint.md)**: Turning requirements into architecture and UI plans.
+3.  **[Implementation Loop](file:///Users/mariog/Work/_agents/.agent/workflows/implementation-loop.md)**: The core cycle of ticketing, coding, and auditing.
+4.  **[Deploy & Persist](file:///Users/mariog/Work/_agents/.agent/workflows/deploy-and-persist.md)**: Moving code to the cloud and updating project memory.
+
+---
+
 ## 🛠 Advanced Features
 
 ### Locked Files Protection

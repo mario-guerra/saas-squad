@@ -11,6 +11,8 @@
 
 Write a memory document to `{{SESSION_MEMORY_PATH}}` for context handoff. This file will be your ONLY context when resuming work.
 
+**CRITICAL**: You are also responsible for maintaining the `SQUAD_DASHBOARD.md` artifact in the project root. This is a high-level, human-readable summary of the project's overall health and mission status.
+
 ### If `{{SESSION_MEMORY_PATH}}` Already Exists
 1. Read it first
 2. Preserve still-relevant sections
@@ -103,6 +105,16 @@ Patterns established in this session:
 - Commits: [Convention]
 - Testing: [Preference]
 - Style: {{LINTING_RULES}}
+
+---
+
+## 🏎️ SQUAD_DASHBOARD.md Structure (Root Artifact)
+Always update this file after every session. It must contain:
+1. **Product North Star**: The core objective and current V1 goal.
+2. **Squad Configuration**: Confirmed Tech Stack and Design Philosophy.
+3. **Feature Depth**: A high-level list of features and their status (Planning, Design, Implementation, Live).
+4. **Cloud Pulse**: Last deployment status and environment URLs.
+5. **Architectural Anchors**: 3-5 key decisions that define the system.
 
 ---
 
