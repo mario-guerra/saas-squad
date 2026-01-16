@@ -35,6 +35,71 @@ To get the most out of the SaaS Squad, your project context (provided via `READM
 
 This library is designed for the end-to-end lifecycle of a SaaS product. **CRITICAL WORKFLOW**: To maintain the highest fidelity and prevent "persona contamination," you should **start a fresh chat session** whenever you switch between agents. Use the `MEMORY_PROMPT` to generate a state handoff before switching.
 
+### THE CHAIN OF CUSTODY (Handoff & Loops)
+
+The following diagram illustrates the high-fidelity handoff protocol and the mandatory quality gates enforced by the SaaS Squad.
+
+```mermaid
+graph TD
+    %% Phase 1: Strategy
+    START((Project Idea)) --> BOOTSTRAP[Bootstrap Agent]
+    BOOTSTRAP --> |Discovery| MKT[Marketing Agent]
+    MKT --> MEM1[MEMORY PROMPT]
+    MEM1 --> PM[Product Management]
+    
+    %% Phase 2: Design
+    PM --> MEM2[MEMORY PROMPT]
+    MEM2 --> ARCH[SW Architecture]
+    ARCH --> MEM3[MEMORY PROMPT]
+    MEM3 --> UI[UI Design]
+    UI --> MEM4[MEMORY PROMPT]
+    MEM4 --> FEAT[UI Feature Design]
+    
+    %% Phase 3: Planning & Execution
+    FEAT --> MEM5[MEMORY PROMPT]
+    MEM5 --> TPM[Project Management]
+    TPM --> MEM6[MEMORY PROMPT]
+    MEM6 --> CODE[Coding / iOS Agent]
+    
+    %% Phase 4: Quality Loop (The Tight Loop)
+    CODE --> MEM7[MEMORY PROMPT]
+    MEM7 --> REVIEW{Code Review}
+    REVIEW --> |Issues Found| MEM8[MEMORY PROMPT]
+    MEM8 --> FIX[Codefix Agent]
+    FIX --> MEM9[MEMORY PROMPT]
+    MEM9 --> REVIEW
+    
+    %% Phase 5: Verification & Deploy
+    REVIEW --> |Clean Audit| MEM10[MEMORY PROMPT]
+    MEM10 --> TEST[Testing Agent]
+    TEST --> MEM11[MEMORY PROMPT]
+    MEM11 --> DEPLOY[Deployment Agent]
+    DEPLOY --> OBS[Observability Agent]
+    OBS --> MEM_FINAL[MEMORY PROMPT]
+    MEM_FINAL --> END((Production Ready))
+
+    %% Debug Loop
+    BUG((Incident)) --> DEBUG[Debugging Agent]
+    DEBUG --> MEM_DEBUG[MEMORY PROMPT]
+    MEM_DEBUG --> FIX
+    
+    %% Styling
+    style MEM1 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM2 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM3 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM4 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM5 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM6 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM7 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM8 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM9 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM10 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM11 fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM_FINAL fill:#f9f,stroke:#333,stroke-width:2px
+    style MEM_DEBUG fill:#f9f,stroke:#333,stroke-width:2px
+    style REVIEW fill:#f96,stroke:#333,stroke-width:4px
+```
+
 Below is the recommended multi-agent orchestration workflow:
 
 ### Phase 1: Strategy & Definition
