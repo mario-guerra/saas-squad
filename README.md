@@ -173,7 +173,7 @@ The SaaS Squad comes with built-in Standard Operating Procedures. You can trigge
 ## 🛠 Advanced Features
 
 ### Locked Files Protection
-The `CODE_REVIEW_AGENT` monitors a `.lockedfiles/` directory. Any modifications to these files are flagged as a **CRITICAL SECURITY WARNING**, ensuring architectural integrity.
+The `CODE_REVIEW_AGENT` monitors a `.lockedfiles` manifest in the project root. This is a plain text file containing one relative path per line. Any modifications to files listed in this manifest are flagged as a **CRITICAL SECURITY WARNING**, ensuring architectural integrity of audited or sensitive code.
 
 ### Adaptable Review Scopes
 Unlike generic reviews, the `CODE_REVIEW_AGENT` supports three distinct modes:

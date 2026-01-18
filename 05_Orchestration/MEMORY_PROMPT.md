@@ -109,7 +109,9 @@ Patterns established in this session:
 - Commits: [Convention]
 - Testing: [Preference]
 - Style: {{LINTING_RULES}}
-- **Feature Fulfillment (Locking)**: Identify completed features ready for the `.lockedfiles` list.
+- **Feature Fulfillment (Locking)**: Identify completed features ready for the `.lockedfiles` manifest.
+  - Recommend the user append the audited file paths to the `.lockedfiles` file in the project root.
+  - Manifest format: One relative path per line. No wildcards.
 
 ---
 
