@@ -134,6 +134,7 @@ Below is the recommended multi-agent orchestration workflow:
 | **[OBSERVABILITY](file:///Users/mariog/Work/_agents/04_Quality_Cloud/OBSERVABILITY_AGENT.md)** | SRE specializing in monitoring, tracing, and logs. |
 | **[DEBUGGING](file:///Users/mariog/Work/_agents/03_Execution/DEBUGGING_AGENT.md)** | Forensic auditor for log analysis and RCA. |
 | **[TESTING](file:///Users/mariog/Work/_agents/03_Execution/TESTING_AGENT.md)** | QA Lead for E2E, Integration, and Load testing. |
+| **[HARDENING](file:///Users/mariog/Work/_agents/01_Strategy/HARDENING_AGENT.md)** | Principal Architect specializing in legacy codebase rescue. |
 | **[BOOTSTRAP_AGENT](file:///Users/mariog/Work/_agents/BOOTSTRAP_AGENT.md)** | Orchestrator & Consultant. Prepares the library for a new project. |
 | **[CODING_AGENT](file:///Users/mariog/Work/_agents/03_Execution/CODING_AGENT.md)** | Zero-Bug Principal Engineer focusing on defensive TDD. |
 | **[CODE_REVIEW_AGENT](file:///Users/mariog/Work/_agents/04_Quality_Cloud/CODE_REVIEW_AGENT.md)** | Adversarial Auditor with context-aware scopes and locked file protection. |
@@ -167,6 +168,7 @@ The SaaS Squad comes with built-in Standard Operating Procedures. You can trigge
 5.  **[Monetization Loop](file:///Users/mariog/Work/_agents/.agent/workflows/monetization-loop.md)**: Building your revenue engine with Stripe.
 6.  **[Observability Loop](file:///Users/mariog/Work/_agents/.agent/workflows/observability-loop.md)**: How to instrument and monitor your app.
 7.  **[Debug-Fix Loop](file:///Users/mariog/Work/_agents/.agent/workflows/debug-fix-loop.md)**: Structured sequence for fixing production bugs.
+8.  **[Hardening Loop](file:///Users/mariog/Work/_agents/.agent/workflows/hardening-loop.md)**: How to inherit and stabilize an existing codebase.
 
 ---
 

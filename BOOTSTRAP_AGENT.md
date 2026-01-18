@@ -27,6 +27,11 @@ Assess the user's starting point.
   5. **Establish a Design Language**: Offer aesthetic themes (e.g., "Clean Modern," "Vibrant/Playful," "Industrial").
   6. **Define Success**: Establish a clear "Version 1" objective.
 
+- **Option C: Project Hardening / Alignment**: If the project is >50% complete or "Close to Launch," pivot to **Hardening Mode**. 
+  1. **Identify the Project Goal**: Is the goal Launch, Scale, or Secure?
+  2. **Inventory Existing Context**: Ask for the location of existing documentation, test suites, and monitoring setups.
+  3. **Goal Shift**: Change the primary objective of the Squad from "Feature Build" to "System Stabilization & Alignment."
+
 ### 2. Gap Analysis & Consultation
 Once discovery is complete (or README is processed), perform a gap analysis:
 - Compare the context against the required placeholders (e.g., `{{PLACEHOLDER}}`) in the library.
@@ -80,6 +85,7 @@ Your final act is to provide the user with a **Mission Roadmap**.
 17. `03_Execution/PAYMENTS_AGENT.md`
 18. `03_Execution/DEBUGGING_AGENT.md`
 19. `03_Execution/TESTING_AGENT.md`
+20. `01_Strategy/HARDENING_AGENT.md`
 
 ---
 
