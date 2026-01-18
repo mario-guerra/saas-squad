@@ -185,6 +185,12 @@ Unlike generic reviews, the `CODE_REVIEW_AGENT` supports three distinct modes:
 
 ## 🔄 Session Continuity & State Persistence
 
+### Dual-Track Development (Stabilize & Grow)
+The SaaS Squad supports "Dual-Track" execution for Brownfield projects:
+- **Track 1: Hardening**: The `HARDENING_AGENT` and `OBSERVABILITY_AGENT` stabilize and secure the existing legacy core.
+- **Track 2: Growth**: Simultaneously, the `CODING_AGENT` and standard **Implementation Loop** can be used to build new features.
+The audited legacy core is protected via the `.lockedfiles` manifest, ensuring that new features never degrade the stability of the foundation.
+
 For long-running projects or when switching between specialized agents (e.g., from PM to Architect), maintaining context is critical. This library provides a specialized **`MEMORY_PROMPT.md`** to handle state handoffs across session boundaries.
 
 ### Why Fresh Sessions?

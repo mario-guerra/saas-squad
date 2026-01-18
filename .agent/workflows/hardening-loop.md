@@ -12,3 +12,4 @@ description: How to inherit and stabilize an existing codebase close to launch.
 6. **Execution**: Follow the **Implementation Loop** to codify logs, metrics, and tracing fixes.
 7. **Verification**: Call `CODE_REVIEW_AGENT.md` for a deep adversarial audit of the most sensitive legacy modules.
 8. **Finalization**: Implement **File Locking** for audited legacy assets using the standard `.lockedfiles` manifest.
+9. **Growth Integration**: While the legacy core is being hardened, initiate the **Implementation Loop** for any new features. Use the audited, locked core as the stable foundation for all new growth.
